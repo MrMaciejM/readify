@@ -1,5 +1,21 @@
 /* targeting mobile devices */
 /* Modal queries are towards the end of the file */
+@media screen and (min-width: 200px) {
+  .carousel-item div,
+  .carousel-item a {
+    display: flex !important;
+    justify-content: center;
+    margin-right: 8%;
+  }
+  .carousel-item a {
+    width: 45%;
+    margin-left: 24%;
+  }
+  .viewMoreLink {
+    color: var(--headings);
+  }
+}
+
 @media screen and (min-width: 400px) {
   .carousel-item div,
   .carousel-item a {
@@ -26,15 +42,6 @@
     width: 50%;
     margin-left: 25%;
   }
-  .historyBtn,
-  #clearHistoryBtn {
-    width: 60%;
-    margin-left: 20%;
-  }
-  #search-button {
-    width: 63%;
-    margin-left: 18.5%;
-  }
 }
 
 @media screen and (min-width: 750px) {
@@ -50,15 +57,6 @@
     width: 40%;
     margin-left: 30%;
   }
-  .historyBtn,
-  #clearHistoryBtn {
-    width: 40%;
-    margin-left: 30%;
-  }
-  #search-button {
-    width: 41.8%;
-    margin-left: 29%;
-  }
 
   .carousel-item div,
   .carousel-item a {
@@ -73,10 +71,6 @@
 }
 
 @media screen and (min-width: 1400px) {
-  .carousel-item a {
-    width: 15%;
-    margin-left: 36.5%;
-  }
 }
 /* ********************* */
 /*** Modal Alignments ***/
