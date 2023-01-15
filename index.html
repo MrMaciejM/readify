@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books API</title>
+    <!-- Bootstrap 5.3.0 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/queries.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Book Info API</h1>
+    </header>
+    <main>
+      <div id="modalTest" style="display: none">
+        <p id="closeModal">X</p>
+        <p id="testParaTitle">Test</p>
+        <p id="testParaDesc">Desc</p>
+        <p id="testParaAuthor">Author</p>
+        <p id="closeModalBtn">Close</p>
+      </div>
+      <!-- aaa -->
+      <div class="div-form-wrapper">
+        <form type="text">
+          <input id="title" type="text" placeholder="Title" />
+          <input id="author" type="text" placeholder="Author" />
+          <button id="search-button" type="submit">Search</button>
+        </form>
+        <button class="historyBtn">History</button>
+        <button id="clearHistoryBtn" class="historyBtn">Clear History</button>
+      </div>
+
+      <!-- Carousel -->
+      <!-- Note to self: 3 test divs for carousel -->
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner"></div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- History DIVs will be generate here with JS -->
+      <div id="history-container" class="history-container-div"></div>
+    </main>
+
+    <!-- Scripts -->
+    <!-- Bootstrap JS 5.3.0 -->
+    <!-- Note: Boostrap JS is needed for the carousel to work -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery 3.6.3-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- main JS script file -->
+
+    <script src="scripts/bookinfo.js"></script>
+    <script src="scripts/localStorage_script.js"></script>
+  </body>
+</html>
