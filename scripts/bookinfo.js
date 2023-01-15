@@ -27,7 +27,7 @@ function createBookInfo(bookdata) {
 
     //Create booktitle, bookauthor,bookfrontpage, bookdesc divs and append to carousel-inner div
     var bookTitle = $("<div/>").addClass("book-title").appendTo(bookInfoArea);
-    bookTitle.html("Title: " + book.volumeInfo.title);
+    bookTitle.html(book.volumeInfo.title);
 
     var bookAuthor = $("<div/>").addClass("book-author").appendTo(bookInfoArea);
 
