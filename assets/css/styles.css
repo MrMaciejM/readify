@@ -14,6 +14,7 @@
   --btnsText: rgb(247, 247, 247);
   --headings: white;
   --pictureBorder: white;
+  --darkestBrown: #5c3b02;
   /* 
   2018 Warm Sand color scheme
   https://www.w3schools.com/w3css/w3css_color_generator.asp
@@ -98,7 +99,8 @@
 #author,
 #search-button,
 .historyBtn,
-#clearHistoryBtn {
+#clearHistoryBtn,
+.randomBtn {
   text-align: center;
   font-size: 18px;
 }
@@ -116,11 +118,36 @@
 body {
   background-color: var(--readingBrown);
 }
+header {
+  background-color: var(--darkBrown) !important;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+header p {
+  font-size: 17px;
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+.emoji {
+  font-size: 30px;
+}
+.emoji-left {
+  margin-right: 1rem;
+}
+.emoji-right {
+  margin-left: 1rem;
+}
+
 h1 {
   color: var(--headings) !important;
   background-color: var(--darkBrown) !important;
+  font-family: "Dancing Script", sans-serif;
+  font-weight: bold;
   text-align: center;
   padding-bottom: 0.4rem;
+  padding-top: 0.4rem;
   font-size: 32px;
 }
 
@@ -133,9 +160,7 @@ form {
 }
 
 /* buttons styling */
-#search-button,
-.historyBtn,
-#clearHistoryBtn {
+.buttons {
   border: none;
   background-color: var(--darkBrown);
   color: white;
@@ -143,12 +168,15 @@ form {
   width: 50%;
   padding: 0.3rem;
   align-self: center !important;
+  transition: all 0.2s;
 }
-#search-button:active,
-.historyBtn:active,
-#clearHistoryBtn:active {
+.buttons:active {
   color: black;
   background-color: var(--readingBrown);
+}
+.buttons:hover {
+  transition: all 0.7s;
+  background-color: var(--darkestBrown);
 }
 
 /* ***** */

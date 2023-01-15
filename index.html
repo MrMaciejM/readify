@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>readify</title>
+    <!-- Google Fonts - Dancing Script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap 5.3.0 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -18,7 +25,15 @@
 
   <body>
     <header>
-      <h1>Readify</h1>
+      <h1>
+        <span class="emoji emoji-left">📖</span>Readify<span
+          class="emoji emoji-right"
+          >📖</span
+        >
+      </h1>
+      <p>
+        <em>"Because books are one of the fuels of imagination"</em> - Unknown
+      </p>
     </header>
     <main>
       <div id="modalTest" style="display: none">
@@ -33,9 +48,14 @@
         <form type="text">
           <input id="title" type="text" placeholder="Title" />
           <input id="author" type="text" placeholder="Author" />
-          <button id="search-button" type="submit">Search</button>
-          <button class="historyBtn">History</button>
-          <button id="clearHistoryBtn" class="historyBtn">Clear History</button>
+          <button class="buttons" id="search-button" type="submit">
+            Search
+          </button>
+          <button class="historyBtn buttons">History</button>
+          <button id="randomBtn" class="randomBtn buttons">Random</button>
+          <button id="clearHistoryBtn" class="historyBtn buttons">
+            Clear History
+          </button>
         </form>
       </div>
 
