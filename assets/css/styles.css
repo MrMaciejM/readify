@@ -72,7 +72,6 @@
 
 /* Links */
 .viewMoreLink {
-  display: inline-block;
   margin-top: 1rem;
   text-decoration: none;
   color: var(--readingBrown);
@@ -172,7 +171,7 @@ form {
   flex-direction: column !important;
   gap: 1rem;
   margin: 0 2%;
-  width: 100%;
+  width: 98.02%;
 }
 
 /* buttons styling */
