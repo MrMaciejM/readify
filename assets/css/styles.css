@@ -129,6 +129,7 @@ header {
   justify-content: center;
 }
 header p {
+  color: var(--headings);
   font-size: 17px;
   text-align: center;
   font-weight: 600;
@@ -183,7 +184,7 @@ form {
   width: 50%;
   padding: 0.3rem;
   align-self: center !important;
-  transition: all 0.2s;
+  transition: all 0.5s;
   outline: 1px solid var(--text);
   font-family: "Dancing Script", sans-serif;
 }
@@ -194,6 +195,13 @@ form {
 .buttons:hover {
   transition: all 0.7s;
   background-color: var(--darkestBrown);
+}
+
+#clearHistoryBtn:hover {
+  color: red;
+  background-color: var(--text);
+  transition: all 1s;
+  font-weight: bold;
 }
 
 /* ***** */
