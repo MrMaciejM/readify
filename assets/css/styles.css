@@ -102,16 +102,21 @@
 #clearHistoryBtn,
 .randomBtn {
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
 }
 
-/* input styling */
+/* input and search button styling */
 #title,
-#author {
+#author,
+#search-button {
   border-radius: 11px;
   border: none;
   box-shadow: 0 0 0 1px var(--darkBrown);
   outline: solid var(--darkBrown) 1px;
+}
+#search-button {
+  width: 70%;
+  margin-left: 15%;
 }
 
 /* PAGE STYLING */
@@ -150,6 +155,16 @@ h1 {
   padding-top: 0.4rem;
   font-size: 32px;
 }
+#title {
+  margin-top: 1.2rem;
+}
+#search-button {
+  color: var(--headings) !important;
+  background-color: var(--darkBrown) !important;
+  margin-bottom: 1.2rem;
+  outline: 1px solid var(--text);
+  border: none;
+}
 
 .div-form-wrapper,
 form {
@@ -157,6 +172,7 @@ form {
   flex-direction: column !important;
   gap: 1rem;
   margin: 0 2%;
+  width: 100%;
 }
 
 /* buttons styling */
@@ -169,6 +185,8 @@ form {
   padding: 0.3rem;
   align-self: center !important;
   transition: all 0.2s;
+  outline: 1px solid var(--text);
+  font-family: "Dancing Script", sans-serif;
 }
 .buttons:active {
   color: black;
@@ -235,4 +253,30 @@ form {
 }
 .div-form-wrapper {
   margin-bottom: 1rem !important;
+}
+
+/* ******* */
+/* SEARCH HISTORY */
+/* h4, .value-link */
+
+h4 {
+  text-align: center;
+  color: var(--headings);
+  background-color: var(--darkBrown);
+  padding: 0.3rem 0;
+  margin-bottom: 2rem;
+}
+
+.value-link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 15%;
+  margin-bottom: 1rem;
+  color: var(--headings);
+  background-color: var(--darkBrown);
+  border-radius: 8px;
+  padding: 0.3rem;
+  text-align: center !important;
 }

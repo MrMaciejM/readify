@@ -80,7 +80,7 @@ function createBookInfo(bookdata) {
           getModalClass.style.display = "none";
         });
 
-        // closinh modal by pressing close button
+        // closing modal by pressing close button
         var closeModalBtn = document.getElementById("closeModalBtn");
         closeModalBtn.addEventListener("click", () => {
           getModalClass.style.display = "none";

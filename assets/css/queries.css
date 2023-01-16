@@ -16,6 +16,18 @@
   }
 }
 
+@media screen and (min-width: 300px) {
+  #title,
+  #author,
+  #search-button {
+    width: 70%;
+    margin-left: 10%;
+  }
+  .buttons {
+    margin-right: 5%;
+  }
+}
+
 @media screen and (min-width: 400px) {
   .carousel-item div,
   .carousel-item a {
@@ -26,6 +38,11 @@
   .carousel-item a {
     width: 30%;
     margin-left: 30%;
+  }
+  #title,
+  #author {
+    width: 60%;
+    margin-left: 20%;
   }
 }
 
